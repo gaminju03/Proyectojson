@@ -26,6 +26,10 @@ struct PostViewModel {
     init(post:Post) {
         self.post = post
     }
+    
+    var id : Int{
+           return self.post.id
+       }
     var title : String{
         return self.post.title
     }

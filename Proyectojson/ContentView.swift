@@ -13,8 +13,12 @@ struct ContentView: View {
     
     
     var body: some View {
-        List(self.postListML.posts, id: \.title){ post in
-            Text(post.title)
+        List(self.postListML.posts, id: \.id){ post in
+            VStack(alignment: .leading){
+                Text(post.title).font(.title)
+                 Text(post.body)
+            }
+           
         }
     }
 }
