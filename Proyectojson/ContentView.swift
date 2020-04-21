@@ -9,8 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var postListML = PostListViewModel()
+    
+    
     var body: some View {
-        Text("Hello, Juan")
+        List(self.postListML.posts, id: \.title){ post in
+            Text(post.title)
+        }
     }
 }
 

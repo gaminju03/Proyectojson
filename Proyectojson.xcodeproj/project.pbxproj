@@ -14,6 +14,9 @@
 		84E36D9B244F68DA008087B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E36D9A244F68DA008087B7 /* Assets.xcassets */; };
 		84E36D9E244F68DA008087B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E36D9D244F68DA008087B7 /* Preview Assets.xcassets */; };
 		84E36DA1244F68DA008087B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E36D9F244F68DA008087B7 /* LaunchScreen.storyboard */; };
+		84E36DAA244F6A12008087B7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E36DA9244F6A12008087B7 /* Post.swift */; };
+		84E36DAD244F6AB1008087B7 /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E36DAC244F6AB1008087B7 /* Webservices.swift */; };
+		84E36DB0244F7453008087B7 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E36DAF244F7453008087B7 /* PostListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		84E36D9D244F68DA008087B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84E36DA0244F68DA008087B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E36DA2244F68DA008087B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E36DA9244F6A12008087B7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		84E36DAC244F6AB1008087B7 /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		84E36DAF244F7453008087B7 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		84E36D90244F68D5008087B7 /* Proyectojson */ = {
 			isa = PBXGroup;
 			children = (
+				84E36DAE244F7429008087B7 /* View Models */,
+				84E36DAB244F6A75008087B7 /* Services */,
+				84E36DA8244F69CD008087B7 /* Models */,
 				84E36D91244F68D5008087B7 /* AppDelegate.swift */,
 				84E36D93244F68D5008087B7 /* SceneDelegate.swift */,
 				84E36D98244F68D5008087B7 /* ContentView.swift */,
@@ -76,6 +85,30 @@
 				84E36D9D244F68DA008087B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84E36DA8244F69CD008087B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E36DA9244F6A12008087B7 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84E36DAB244F6A75008087B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84E36DAC244F6AB1008087B7 /* Webservices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84E36DAE244F7429008087B7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E36DAF244F7453008087B7 /* PostListModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E36DAD244F6AB1008087B7 /* Webservices.swift in Sources */,
+				84E36DB0244F7453008087B7 /* PostListModel.swift in Sources */,
 				84E36D92244F68D5008087B7 /* AppDelegate.swift in Sources */,
 				84E36D97244F68D5008087B7 /* Proyectojson.xcdatamodeld in Sources */,
 				84E36D99244F68D5008087B7 /* ContentView.swift in Sources */,
 				84E36D94244F68D5008087B7 /* SceneDelegate.swift in Sources */,
+				84E36DAA244F6A12008087B7 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
